@@ -429,6 +429,14 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
 .room figcaption i.c-lav{background:var(--lav)}.room figcaption i.c-sky{background:var(--sky)}.room figcaption i.c-pink{background:var(--pink)}.room figcaption i.c-mint{background:var(--mint)}
 .room figcaption b{font-size:.95rem}.room figcaption span{font-size:.82rem;color:var(--muted)}
 .room-q{aspect-ratio:16/9;border-radius:10px;background:var(--lav);display:grid;place-items:center;text-align:center;padding:16px;font-weight:700;font-size:.92rem;line-height:1.7;color:var(--accent-ink)}
+.cg-grid{display:grid;gap:12px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:860px){.cg-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.cg-pair{background:var(--surface);border-radius:16px;padding:8px;display:grid;gap:8px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:860px){.cg-pair{grid-template-columns:minmax(0,1fr)}}
+.cg-pair figure{margin:0;position:relative}
+.cg-pair img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block;cursor:zoom-in}
+.cg-pair figcaption{position:absolute;left:8px;top:8px;font-family:var(--f-latin);font-weight:800;font-size:.68rem;letter-spacing:.06em;padding:3px 9px;border-radius:999px;background:rgba(20,16,40,.62);color:#fff}
+.cg-pair figcaption.af{background:var(--accent)}
 .plan-card{background:var(--surface);border-radius:var(--r);padding:clamp(16px,2.6vw,28px);display:grid;gap:12px;align-content:start}
 .plan{width:100%;height:auto;display:block}
 .plan-card .flow{font-size:.8rem;font-weight:700;color:var(--accent-ink);text-align:center}
@@ -480,12 +488,12 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
       <p class="ab-contact">jeij27102@gmail.com<br>010-9224-4526</p></div>
     <div class="ab-body">
       <h2 class="h2" style="font-size:clamp(1.45rem,3.3vw,2.25rem)"><span style="white-space:nowrap">보는 팬에서 만드는 사람으로.</span><br><span style="white-space:nowrap">만들어 봤고, 팔아 봤습니다.</span></h2>
-      <p class="ab-why rv" style="word-break:keep-all;text-wrap:pretty"><span style="display:block">열 살에 처음 아이돌을 좋아한 뒤로 한 번도 쉰 적이 없습니다.</span><span style="display:block">콘서트장과 음악방송, 팬사인회에 직접 갔고, <span style="white-space:nowrap">자체 콘텐츠가 올라오는 시간을</span> <span style="white-space:nowrap">기다리며 자랐습니다.</span></span><span style="display:block">그러다 바람이 하나 생겼습니다.</span><span style="display:block">기다리는 쪽이 아니라 <span style="white-space:nowrap">만드는 쪽에 서 보고 싶다는 것.</span></span><span style="display:block">그래서 누가 자리를 내주기 전에, <span style="white-space:nowrap">혼자서 먼저 만들어 봤습니다.</span></span></p>
+      <p class="ab-why rv" style="word-break:keep-all;text-wrap:pretty"><span style="display:block">열 살에 처음 아이돌을 좋아한 뒤로 <span style="white-space:nowrap">한 번도 쉰 적이 없습니다.</span></span><span style="display:block">콘서트장과 음악방송, 팬사인회에 직접 갔고, <span style="white-space:nowrap">자체 콘텐츠가 올라오는 시간을</span> <span style="white-space:nowrap">기다리며 자랐습니다.</span></span><span style="display:block">그러다 바람이 하나 생겼습니다.</span><span style="display:block">기다리는 쪽이 아니라 <span style="white-space:nowrap">만드는 쪽에 서 보고 싶다는 것.</span></span><span style="display:block">그래서 누가 자리를 내주기 전에, <span style="white-space:nowrap">혼자서 먼저 만들어 봤습니다.</span></span></p>
       <dl class="ab-list rv">
         <div><dt>Education</dt><dd>인하대학교 문화콘텐츠문화경영학과 <small>2020 – 2025</small><br>Memorial University 캐나다 교환학생 <small>2024</small></dd></div>
         <div><dt>자격 · 어학</dt><dd>GTQ 1급 · IELTS Overall 6.0 · Google Analytics</dd></div>
         <div><dt>Skills</dt><dd>Photoshop · Premiere Pro · CapCut <small>편집, 보정, 숏폼 자막</small><br>Blender · Unity <small>모델링, ARKit52</small><br>AI Tool <small>Claude · Gemini · NotebookLM · 콘텐츠 제작, 툴 제작, 기획, 자료 분석</small></dd></div>
-        <div><dt>Experience</dt><dd><small>상품 기획·판매</small> 웹소설 캐릭터 팬 앨범 제작 (2021)<br><small>3D 제작</small> 버추얼 스트리머 외주 (2023~)<br><small>영상 제작</small> 영상학회 6CC 대표작 4편<br><small>콘텐츠·SNS</small> 숏폼 채널, 달리 서포터즈<br><small>브랜드 기획</small> 코닥 팝업스토어 (전공 기획 수업)</dd></div>
+        <div><dt>Experience</dt><dd><small>상품 기획·판매</small> 웹소설 캐릭터 팬 앨범 제작 (2021)<br><small>3D 제작</small> 버추얼 스트리머 외주 (2023~)<br><small>영상 제작</small> 영상학회 6CC 대표작 4편<br><small>콘텐츠·SNS</small> 아이돌 숏폼, 달리 서포터즈<br><small>브랜드 기획</small> 코닥 팝업스토어 (전공 기획 수업)</dd></div>
       </dl>
     </div>
   </div>
@@ -545,7 +553,7 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
   <div class="sub split rev">
     <div class="stack">
       <div class="sub-head" style="margin:0"><h3>실제 아이돌의 컴백 일정처럼, 프로모션까지.</h3></div>
-      <p class="lead" style="margin:0">이벤트용 X 계정에 컨셉 포토를 번호 붙여 하나씩 업로드하면서<br>실제 아이돌 앨범의 티저 공개 방식처럼 프로모션을 진행했습니다.</p>
+      <p class="lead" style="margin:0">이벤트용 X 계정에 컨셉 포토를 번호 붙여 하나씩 업로드하면서<br>실제 앨범 티저 공개 방식처럼 프로모션을 진행했습니다.</p>
       <div class="process">
         <div class="tint c-lav rv"><b><i>01</i>컨셉 포토</b><p>Concept Photo #1처럼 번호를 붙여 이미지를 순차 공개</p></div>
         <div class="tint c-sky rv"><b><i>02</i>발매 고지</b><p>앨범명·발매일(2021.09.10)을 티저 형식으로 고지</p></div>
@@ -608,7 +616,7 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
       <h2 class="h2" style="font-size:clamp(1.45rem,3.3vw,2.25rem)"><span style="white-space:nowrap">일러스트 한 장, 키워드 몇 개</span><br><span style="white-space:nowrap">움직이는 3D 아바타로.</span></h2>
       <p class="meta-line" style="margin:0">2023 ~ 현재 · 버추얼 스트리머 모델 커스터마이징 외주 · 상담부터 납품까지 1인 운영</p>
       <p class="meta-line" style="margin:0">Blender · Unity · Warudo · VSeeFace · ARKit52</p>
-      <div class="tint c-lav rv"><div class="label">Problem <span>문제</span></div><p>컨셉 일러스트까지 준비했는데, 3D 공용 베이스로 잘못 만들면 '어디서 본 듯한' 모델이 되기 쉬웠습니다.</p></div>
+      <div class="tint c-lav rv"><div class="label">Problem <span>문제</span></div><p>의뢰자가 콘셉트 일러스트까지 준비해도, 3D 공용 베이스로 잘못 만들면 '어디서 본 듯한' 모델이 되기 쉬웠습니다.</p></div>
       <div class="process">
         <div class="tint c-sky rv"><b><i>01</i>레퍼런스 분석</b><p>일러스트 해석, 범위·일정 합의</p></div>
         <div class="tint c-pink rv"><b><i>02</i>단계별 컨펌</b><p>성형 → 표정 → 헤어·의상</p></div>
@@ -678,10 +686,29 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
   </div>
 
   <div class="sub">
+    <div class="sub-head"><h3>MV 색보정, 전과 후.</h3><p class="lead" style="margin:4px 0 0">MV &lt;친구로 지내다 보면&gt; · Premiere Pro</p></div>
+    <div class="cg-grid">
+      <div class="cg-pair rv">
+        <figure><img class="zoom" src="mv-colorfixbefore3.jpg" alt="MV 색보정 전 — 야경 장면" loading="lazy"><figcaption>Before</figcaption></figure>
+        <figure><img class="zoom" src="mv-colorfix3.jpg" alt="MV 색보정 후 — 야경 장면" loading="lazy"><figcaption class="af">After</figcaption></figure>
+      </div>
+      <div class="cg-pair rv">
+        <figure><img class="zoom" src="mv-colorfixbefore.jpg" alt="MV 색보정 전 — 돌담 길 장면" loading="lazy"><figcaption>Before</figcaption></figure>
+        <figure><img class="zoom" src="mv-colorfix.jpg" alt="MV 색보정 후 — 돌담 길 장면" loading="lazy"><figcaption class="af">After</figcaption></figure>
+      </div>
+      <div class="cg-pair rv">
+        <figure><img class="zoom" src="mv-colorfixbefore2.jpg" alt="MV 색보정 전 — 가로수 길 장면" loading="lazy"><figcaption>Before</figcaption></figure>
+        <figure><img class="zoom" src="mv-colorfix2.jpg" alt="MV 색보정 후 — 가로수 길 장면" loading="lazy"><figcaption class="af">After</figcaption></figure>
+      </div>
+    </div>
+    <p class="cap" style="margin-top:8px">Before: 촬영 원본 · After: 색보정 후 · 눌러서 크게 보기</p>
+  </div>
+
+  <div class="sub">
     <div class="sub-head"><h3>작품별 하이라이트</h3></div>
     <div class="hl">
       <div data-sheet="mv" class="tint c-mint rv"><div class="thumb"><img class="zoom" src="mv-1.jpg" alt="친구로 지내다 보면 MV"></div><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="role">편집</span><span class="role">썸네일·포스터 제작</span></div><h4>MV &lt;친구로 지내다 보면&gt;</h4><p>콘티 수정 제안, 컷·색보정·합성, 컨펌 5회, 썸네일·포스터 제작</p><div class="links"><button type="button" class="more" data-sheet-open="mv">자세히 보기 →</button><a href="https://www.youtube.com/watch?v=T9Tq5qo6uT4" target="_blank" rel="noopener">영상 링크</a></div></div>
-      <div data-sheet="webdrama" class="tint c-sky rv"><div class="thumb"><img class="zoom" src="wd-1.jpg" alt="웹드라마 2부작"></div><span class="role">조연출</span><h4>웹드라마 2부작</h4><p>지원자 250명 검토해 캐스팅, 의상·소품, 현장 스크립트·슬레이트</p><div class="links"><button type="button" class="more" data-sheet-open="webdrama">자세히 보기 →</button><a href="https://www.youtube.com/watch?v=QHlmC7J3rNA" target="_blank" rel="noopener">1화</a><a href="https://www.youtube.com/watch?v=2XSOkKmtrEc" target="_blank" rel="noopener">2화</a></div></div>
+      <div data-sheet="webdrama" class="tint c-sky rv"><div class="thumb"><img class="zoom" src="wd-1.jpg" alt="웹드라마 2부작"></div><span class="role">조연출</span><h4>웹드라마 2부작</h4><p>지원자 250명 검토해 캐스팅, 의상·소품, 현장 스크립트·슬레이터</p><div class="links"><button type="button" class="more" data-sheet-open="webdrama">자세히 보기 →</button><a href="https://www.youtube.com/watch?v=QHlmC7J3rNA" target="_blank" rel="noopener">1화</a><a href="https://www.youtube.com/watch?v=2XSOkKmtrEc" target="_blank" rel="noopener">2화</a></div></div>
       <div data-sheet="askin" class="tint c-lav rv"><div class="thumb"><img class="zoom" src="askin-cover.jpg" alt="웹예능 Ask In (h)a Box"></div><span class="role">연출</span><h4>웹예능<br>&lt;Ask In (h)a Box&gt;</h4><p>Ask in a box 포맷 차용, 출연진 말투로 대본 작성, 카메라 3대로 테이크 최소화</p><div class="links"><button type="button" class="more" data-sheet-open="askin">자세히 보기 →</button><a href="https://youtu.be/tctvrMOi5rY" target="_blank" rel="noopener">영상 링크</a></div></div>
       <div data-sheet="marigold" class="tint c-pink rv"><div class="thumb"><img class="zoom" src="mg-1.jpg" alt="Marigold Live Clip"></div><span class="role">아트</span><h4>Live Clip &lt;Marigold&gt;</h4><p>밴드 구도·의상 콘셉트, 현장에서 조명 위치 재조정</p><div class="links"><button type="button" class="more" data-sheet-open="marigold">자세히 보기 →</button><a href="https://www.youtube.com/watch?v=3kiDytXKUSI" target="_blank" rel="noopener">영상 링크</a></div></div>
     </div>
@@ -748,7 +775,7 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
   <div class="sub cn-hero">
     <div class="stack">
       <div class="sub-head" style="margin:0"><h3>같은 주제, 지금 다시 만든다면.</h3></div>
-      <p class="lead" style="margin:0">2021년 '이색 아이스크림' 카드뉴스를 2026년에 다시 기획·제작한 포트폴리오용 재구성 작업입니다. 옆으로 넘겨 7장 전체를 볼 수 있어요.</p>
+      <p class="lead" style="margin:0">2021년 '이색 아이스크림' 카드뉴스를 2026년에 다시 기획·제작한 포트폴리오용 재구성 작업입니다. 옆으로 넘겨 7장 전체를 볼 수 있습니다.</p>
       <div class="process" style="grid-template-columns:1fr">
         <div class="tint c-lav rv"><b><i>01</i>후킹</b><p>"아이스크림에 불닭을 넣었다고?" 질문형 첫 장</p></div>
         <div class="tint c-sky rv"><b><i>02</i>흐름</b><p>배경 → 제품 2종 → 비교 → 인사이트 → 참여, 7장 구성</p></div>
@@ -788,13 +815,13 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
       <h2 class="h2">기억을 다시<br>현상하는 경험.</h2>
       <p class="meta-line" style="margin:0">2023 · 코닥 × 므네모시네 팝업스토어 기획 · 전공 수업: 콘셉트 기획, 홍보 포스터 담당 (5인 팀)</p>
       <div class="tint c-lav rv"><div class="label">Problem <span>문제</span></div><p>사진이 디지털로 흩어지면서 '인화'하는 경험이 거의 사라졌습니다. 코닥을 다시 경험하게 할 계기가 필요했습니다.<br>→ 핵심 메시지: <b style="color:var(--ink)">기억은 우리의 뮤즈다</b></p></div>
-      <div class="tint c-sky rv"><div class="label">Action <span>실행</span></div><ol><li>핵심 메시지 정의</li><li>므네모시네 신화로 스토리텔링</li><li>공간·동선 – 촬영 → 인화 대기 카페</li><li>홍보 포스터 – 여신 + 코닥 카메라의 유머러스한 조합</li></ol></div>
+      <div class="tint c-sky rv"><div class="label">Action <span>실행</span></div><ol><li>핵심 메시지 정의</li><li>므네모시네 신화로 스토리텔링</li><li>공간·동선 – 여섯 공간을 한 방향으로 잇는 관람 동선</li><li>홍보 포스터 – 여신 + 코닥 카메라의 유머러스한 조합</li></ol></div>
       <div class="tint c-pink rv"><div class="label">Learned <span>배운 점</span></div><p>포스터가 팝업의 첫인상이라, 기획을 충분히 이해하고 디자인해야 메시지가 흐려지지 않는다는 것을 알게 됐습니다.</p></div>
     </div>
     <figure class="frame lav media rv" style="margin:0;max-width:460px;justify-self:center"><img class="zoom" src="kodak.jpg" alt="Mnemosyne X KODAK 홍보 포스터" style="aspect-ratio:3/4"><figcaption class="cap" style="padding:6px 4px 0">홍보 포스터 · Photoshop 합성 (배경 숲: Midjourney 생성)</figcaption></figure>
   </div>
   <div class="sub">
-    <div class="sub-head"><h3>신화를 입힌 제품은 많았지만,<br>이야기는 없었다.</h3><p class="lead" style="margin:4px 0 0;max-width:none">향 제품이나 주얼리는 이미 신화·별자리와 자주 엮여 왔습니다.<br>하지만 대부분 분위기나 별자리 이미지로만 쓰였고, 제품 뒤에 이야기는 쉽게 찾아볼 수는 없었습니다.</p></div>
+    <div class="sub-head"><h3>신화를 입힌 제품은 많았지만,<br>이야기는 없었다.</h3><p class="lead" style="margin:4px 0 0;max-width:none">향 제품이나 주얼리는 이미 신화·별자리와 자주 엮여 왔습니다.<br>하지만 대부분 분위기나 별자리 이미지로만 쓰였고, 제품 뒤의 이야기는 쉽게 찾아볼 수 없었습니다.</p></div>
     <div class="myth">
       <div class="stack">
         <div class="tint c-lav rv"><b class="mt"><i>01</i>향 × 신화</b><p>신의 이름과 이미지로 분위기는 냈지만, 그 향에 얽힌 이야기는 들려주지 않았습니다.</p></div>
