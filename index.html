@@ -190,6 +190,7 @@ section{position:relative}
 
 /* steps */
 .steps6{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+@media (min-width:860px){.steps6{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .steps6 .tint{display:grid;gap:8px;align-content:start}
 .steps6 .t{display:flex;align-items:center;gap:12px;font-weight:700;font-size:1.05rem}
 .steps6 .n{font-family:var(--f-latin);font-weight:800;font-size:.85rem;width:36px;height:36px;border-radius:10px;background:var(--surface);display:grid;place-items:center;color:var(--accent-ink);flex:none}
@@ -479,7 +480,7 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
       <p class="ab-contact">jeij27102@gmail.com<br>010-9224-4526</p></div>
     <div class="ab-body">
       <h2 class="h2" style="font-size:clamp(1.45rem,3.3vw,2.25rem)"><span style="white-space:nowrap">보는 팬에서 만드는 사람으로.</span><br><span style="white-space:nowrap">만들어 봤고, 팔아 봤습니다.</span></h2>
-      <p class="ab-why rv">열 살에 처음 아이돌을 좋아한 뒤로 한 번도 쉰 적이 없습니다. 콘서트장과 음악방송, 팬사인회에 직접 갔고, 자체 콘텐츠가 올라오는 시간을 기다리며 자랐습니다. 그러다 바람이 하나 생겼습니다. 기다리는 쪽이 아니라 만드는 쪽에 서 보고 싶다는 것. 그래서 누가 자리를 내주기 전에, 혼자서 먼저 만들어 봤습니다.</p>
+      <p class="ab-why rv" style="word-break:keep-all;text-wrap:pretty"><span style="display:block">열 살에 처음 아이돌을 좋아한 뒤로 한 번도 쉰 적이 없습니다.</span><span style="display:block">콘서트장과 음악방송, 팬사인회에 직접 갔고, <span style="white-space:nowrap">자체 콘텐츠가 올라오는 시간을</span> <span style="white-space:nowrap">기다리며 자랐습니다.</span></span><span style="display:block">그러다 바람이 하나 생겼습니다.</span><span style="display:block">기다리는 쪽이 아니라 <span style="white-space:nowrap">만드는 쪽에 서 보고 싶다는 것.</span></span><span style="display:block">그래서 누가 자리를 내주기 전에, <span style="white-space:nowrap">혼자서 먼저 만들어 봤습니다.</span></span></p>
       <dl class="ab-list rv">
         <div><dt>Education</dt><dd>인하대학교 문화콘텐츠문화경영학과 <small>2020 – 2025</small><br>Memorial University 캐나다 교환학생 <small>2024</small></dd></div>
         <div><dt>자격 · 어학</dt><dd>GTQ 1급 · IELTS Overall 6.0 · Google Analytics</dd></div>
@@ -515,10 +516,11 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
       <p class="lead" style="margin-top:0">완결 전이라 공식 앨범도 굿즈도 없던 웹소설 캐릭터.<br>소장하고 싶은 팬의 마음에서 출발해 작가 17명과 앨범을 만들고, 판매까지 혼자 운영했습니다.</p>
       <div class="tint c-lav rv"><div class="label">Problem <span>문제</span></div><p>팬들의 소장 수요는 분명했지만 채워줄 공급이 없었습니다.<br>그 빈자리를 직접 만들어 채워 보기로 했습니다.</p></div>
       <div class="tint c-sky rv"><div class="label">Action <span>실행</span></div><p><span style="white-space:nowrap">기획 → 작가 17명 협업 →</span> <span style="white-space:nowrap">디자인 → 제작 →</span> <span style="white-space:nowrap">판매·홍보 → 생일 광고</span></p></div>
-      <div class="stats rv" style="margin-top:12px"><span class="tag">RESULT 결과</span>
+      <div class="stats rv" style="margin-top:12px;grid-template-columns:repeat(2,minmax(0,1fr))"><span class="tag">RESULT 결과</span>
         <div class="stat"><b data-count>188건</b><span>주문</span></div>
         <div class="stat"><b data-count>283개</b><span>판매 수량</span></div>
         <div class="stat"><b data-count>17명</b><span>협업 작가</span></div>
+        <div class="stat"><b data-count>약 1,400명</b><span>계정 팔로워 (프로젝트 당시 기준)</span></div>
       </div>
     </div>
     <div class="media rv">
@@ -537,7 +539,7 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
       <figure class="shot" style="margin:0"><img class="zoom" src="parts-3.jpg" alt="POLY ver. 구성 — 아웃케이스 · CD · 부클릿"><figcaption class="cap">POLY ver.</figcaption></figure>
       <figure class="shot" style="margin:0"><img class="zoom" src="parts-4.jpg" alt="POLY ver. 구성 — 포토카드 · 가사지 · 특전"></figure>
     </div>
-    <p class="note" style="margin-top:10px">구성품 디자인 4종 (일러스트: 참여 작가) · 눌러서 크게 보기</p>
+    <p class="note" style="margin-top:10px">디자인 상세 컷 4장 (일러스트: 참여 작가) · 눌러서 크게 보기</p>
   </div>
 
   <div class="sub split rev">
@@ -559,7 +561,7 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
       <p class="lead" style="margin:0">판매 일정이 끝났을 때 캐릭터의 생일이 코앞이었습니다. 팬들과 함께 축하하고 싶어, 프로젝트를 마무리하기 전 생일 당일에 배너 광고를 집행했습니다.<br>팬 투표로 정한 해시태그로 광고 인증 이벤트도 함께 열었습니다.</p>
       <div class="stats rv" style="margin-top:14px"><span class="tag">RESULT 결과</span>
         <div class="stat"><b data-count>4.5%</b><span>광고 클릭률</span></div>
-        <div class="stat"><b>조기 소진</b><span>광고 예산</span></div>
+        <div class="stat"><b style="font-size:clamp(1.1rem,1.95vw,1.62rem);line-height:1.36">조기 소진</b><span>광고 예산</span></div>
         <div class="stat"><b data-count>100건+</b><span>해시태그 인증글</span></div>
       </div>
       <div class="tint c-lav rv"><div class="label">Learned <span>배운 점</span></div><p>팬이 '소장하고 싶어 하는 것'을 보고 구성을 짰고, 예약 판매와 순차 공개로 기대감을 쌓아 가는 흐름을 직접 운영해 봤습니다.</p></div>
@@ -567,8 +569,8 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
     <div class="media rv">
       <figure class="shot" style="margin:0"><img class="zoom" src="kk-banner.jpg" alt="① 카카오톡 배너 광고" style="aspect-ratio:1080/258"><figcaption class="cap">① 카카오톡 배너 광고</figcaption></figure>
       <div class="grid3" style="align-items:start">
-        <figure class="shot" style="margin:0"><img class="zoom" src="kk-page.jpg" alt="② 연결 페이지" style="aspect-ratio:3/4;object-position:50% 30%"><figcaption class="cap">② 연결 페이지</figcaption></figure>
-        <figure class="shot" style="margin:0"><img class="zoom" src="kk-msg.jpg" alt="③ 배너 클릭 시 메시지 화면" style="aspect-ratio:3/4;object-position:50% 25%"><figcaption class="cap">③ 클릭 시 메시지 화면</figcaption></figure>
+        <figure class="shot" style="margin:0"><img class="zoom" src="kk-page.jpg" alt="② 카카오톡 공유 시" style="aspect-ratio:3/4;object-position:50% 30%"><figcaption class="cap">② 카카오톡 공유 시</figcaption></figure>
+        <figure class="shot" style="margin:0"><img class="zoom" src="kk-msg.jpg" alt="③ 클릭 시 나타나는 화면" style="aspect-ratio:3/4;object-position:50% 25%"><figcaption class="cap">③ 클릭 시 나타나는 화면</figcaption></figure>
         <figure class="shot" style="margin:0"><img class="zoom" src="album-bday.jpg" alt="④ 생일 광고 이미지" style="aspect-ratio:3/4"><figcaption class="cap">④ 생일 광고 이미지</figcaption></figure>
       </div>
     </div>
@@ -662,12 +664,12 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
   <div class="tbl-wrap rv" style="margin-top:26px"><table><colgroup><col style="width:31%"><col style="width:13%"><col style="width:12%"><col style="width:12%"><col style="width:12%"><col style="width:20%"></colgroup>
     <thead><tr><th>작품</th><th class="c">역할</th><th class="c">프리</th><th class="c">촬영</th><th class="c">포스트</th><th>성과</th></tr></thead>
     <tbody>
-      <tr><td>웹예능 &lt;Ask In (h)a Box&gt; (2020)</td><td class="c">연출</td><td class="c"><i class="dot"></i></td><td class="c"><i class="dot"></i></td><td class="c"><i class="dot sup" title="지원"></i></td><td>기획·대본·콘티 전담</td></tr>
+      <tr><td>웹예능 &lt;Ask In (h)a Box&gt; (2020)</td><td class="c">연출</td><td class="c"><i class="dot"></i></td><td class="c"><i class="dot sup" title="지원"></i></td><td class="c"><i class="dot sup" title="지원"></i></td><td>기획·대본·콘티 전담</td></tr>
       <tr><td>웹드라마 2부작 (2024)</td><td class="c">조연출</td><td class="c"><i class="dot"></i></td><td class="c"><i class="dot"></i></td><td class="c"><i class="dot sup" title="지원"></i></td><td>배우 섭외·슬레이터 · 2화 조회수 5,376회</td></tr>
       <tr><td>&lt;Marigold&gt; Live Clip (2024)</td><td class="c">아트</td><td class="c"><i class="dot"></i></td><td class="c"><i class="dot"></i></td><td class="c"></td><td>의상·조명 연출</td></tr>
-      <tr><td>&lt;친구로 지내다 보면&gt; MV (2024)</td><td class="c">편집</td><td class="c"><i class="dot"></i></td><td class="c"><i class="dot"></i></td><td class="c"><i class="dot"></i></td><td>썸네일·포스터 제작</td></tr>
+      <tr><td>&lt;친구로 지내다 보면&gt; MV (2024)</td><td class="c">편집</td><td class="c"><i class="dot"></i></td><td class="c"><i class="dot"></i></td><td class="c"><i class="dot"></i></td><td>MV 편집 (컷·색보정·합성) · 썸네일·포스터 제작</td></tr>
     </tbody></table></div>
-  <p class="tbl-legend"><span><i class="dot"></i>직접 담당</span><span><i class="dot sup"></i>지원 (소스·스크립트 정리 후 전달)</span></p>
+  <p class="tbl-legend"><span><i class="dot"></i>직접 담당</span><span><i class="dot sup"></i>지원 (촬영 보조, 소스·스크립트 정리 후 전달)</span></p>
   <div class="stats rv" style="margin-top:26px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))"><span class="tag">RESULT 결과</span>
     <div class="stat"><b data-count>250명</b><span>배우 지원자 검토</span></div>
     <div class="stat"><b data-count>5,376회</b><span>웹드라마 2화 조회수</span></div>
@@ -870,7 +872,7 @@ dialog.sheet[open]{animation:sheetIn .4s cubic-bezier(.2,.7,.2,1)}
   <p class="lead">프로젝트별 핵심 성과와 실제로 다뤄 본 툴</p>
   <div class="kr">
     <div class="stat rv"><em class="c-lav">01 팬덤 앨범</em><b data-count>188건</b><span>앨범 주문</span></div>
-    <div class="stat rv"><em class="c-lav">01 팬덤 앨범</em><b data-count>약 1,400명</b><span>프로젝트 X 계정 팔로워</span></div>
+    <div class="stat rv"><em class="c-lav">01 팬덤 앨범</em><b data-count>약 1,400명</b><span>프로젝트 X 계정 팔로워 (당시 기준)</span></div>
     <div class="stat rv"><em class="c-lav">01 팬덤 앨범</em><b data-count>4.5%</b><span>생일 광고 클릭률</span></div>
     <div class="stat rv"><em class="c-lav">01 팬덤 앨범</em><b data-count>100건+</b><span>해시태그 인증글</span></div>
     <div class="stat rv"><em class="c-sky">02 3D 외주</em><b data-count>15회</b><span>3D 아바타 납품</span></div>
